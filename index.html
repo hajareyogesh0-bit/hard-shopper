@@ -1,64 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hard-Shopper</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hard-Shopper</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>🛒 Hard-Shopper</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">Cart</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+<header>
 
-    <section class="hero">
-        <h2>Welcome to Hard-Shopper</h2>
-        <p>Your One-Stop Online Store</p>
-    </section>
+<div class="logo">
+🛒 Hard-Shopper
+</div>
 
-    <section class="products">
+<nav>
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#">Contact</a>
+<a href="#">Cart (<span id="cart-count">0</span>)</a>
+</nav>
 
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Product">
-            <h3>Wireless Headphones</h3>
-            <p>₹1,999</p>
-            <button onclick="addToCart('Wireless Headphones')">
-                Add to Cart
-            </button>
-        </div>
+</header>
 
-        <div class="product">
-            <img src="images/headphone.jpg" alt="Wireless Headphones">
-            <h3>Smart Watch</h3>
-            <p>₹3,499</p>
-            <button onclick="addToCart('Smart Watch')">
-                Add to Cart
-            </button>
-        </div>
+<section class="hero">
 
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Product">
-            <h3>Gaming Mouse</h3>
-            <p>₹999</p>
-            <button onclick="addToCart('Gaming Mouse')">
-                Add to Cart
-            </button>
-        </div>
+<h1>Welcome to Hard-Shopper</h1>
+<p>Your One-Stop Online Store</p>
 
-    </section>
+<input
+type="text"
+id="search"
+placeholder="Search Products..."
+onkeyup="searchProducts()">
 
-    <footer>
-        <p>© 2026 Hard-Shopper. All Rights Reserved.</p>
-    </footer>
+</section>
 
-    <script src="script.js"></script>
+<section class="products" id="products">
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400"
+alt="Headphones">
+
+<h3>Wireless Headphones</h3>
+
+<p class="price">₹1,999</p>
+
+<button onclick="addToCart('Wireless Headphones')">
+Add To Cart
+</button>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400"
+alt="Smart Watch">
+
+<h3>Smart Watch</h3>
+
+<p class="price">₹3,499</p>
+
+<button onclick="addToCart('Smart Watch')">
+Add To Cart
+</button>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=400"
+alt="Gaming Mouse">
+
+<h3>Gaming Mouse</h3>
+
+<p class="price">₹999</p>
+
+<button onclick="addToCart('Gaming Mouse')">
+Add To Cart
+</button>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"
+alt="Smartphone">
+
+<h3>Smartphone</h3>
+
+<p class="price">₹19,999</p>
+
+<button onclick="addToCart('Smartphone')">
+Add To Cart
+</button>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1585298723682-7115561c51b7?w=400"
+alt="Laptop">
+
+<h3>Laptop</h3>
+
+<p class="price">₹55,999</p>
+
+<button onclick="addToCart('Laptop')">
+Add To Cart
+</button>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=400"
+alt="Keyboard">
+
+<h3>Mechanical Keyboard</h3>
+
+<p class="price">₹2,499</p>
+
+<button onclick="addToCart('Mechanical Keyboard')">
+Add To Cart
+</button>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Hard-Shopper. All Rights Reserved.
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
